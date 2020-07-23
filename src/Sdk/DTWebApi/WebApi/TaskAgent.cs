@@ -75,6 +75,13 @@ namespace GitHub.DistributedTask.WebApi
             internal set;
         }
 
+        [DataMember(EmitDefaultValue = false)]
+        public bool Ephemeral
+        {
+            get;
+            set;
+        }
+
         /// <summary>
         /// Date on which the last connectivity status change occurred.
         /// </summary>
