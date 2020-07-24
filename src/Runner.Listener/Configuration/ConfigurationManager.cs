@@ -453,6 +453,7 @@ namespace GitHub.Runner.Listener.Configuration
             agent.Version = BuildConstants.RunnerPackage.Version;
             agent.OSDescription = RuntimeInformation.OSDescription;
             agent.Ephemeral = ephemeral;
+            agent.MaxParallelism = 1;
 
             agent.Labels.Clear();
 
